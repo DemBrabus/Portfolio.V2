@@ -1,0 +1,1 @@
+{"version":3,"sources":["Styles/About.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA","file":"About.3a66efcb.css","sourceRoot":"..","sourcesContent":[".About {\n    width: 100%;\n    height: 100%;\n    background-color: aquamarine;\n}"]}

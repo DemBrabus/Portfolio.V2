@@ -1,0 +1,1 @@
+{"version":3,"sources":["Scripts/A-Scripts.js"],"names":["Run","console","log"],"mappings":"AAAA,IAAMA,GAAG,GAAG,SAANA,GAAM,GAAM;AACdC,EAAAA,OAAO,CAACC,GAAR,CAAY,cAAZ;AACH,CAFD","file":"A-Scripts.4ba3d6d3.js","sourceRoot":"..","sourcesContent":["const Run = () => {\n    console.log('Portfolio.V2');\n}"]}
