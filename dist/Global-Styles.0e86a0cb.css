@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   font-family: "Montserrat", sans-serif;
   color: #E6E6E6;
   background-color: #141414;
@@ -55,20 +55,36 @@ a {
   justify-content: space-between;
   align-items: center;
   z-index: 10000;
+  transition: padding 0.5s ease-in-out;
 }
 
 .NavList {
   display: flex;
   justify-content: space-between;
   width: 180px;
+  transition: width 0.5s ease-in-out;
 }
 
 .NavLink {
   color: #E6E6E6;
   font-size: 18px;
   font-weight: 200;
+  transition: font-size 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 650px) {
+  .Nav {
+    padding: 0px 35px;
+  }
+
+  .NavList {
+    width: 160px;
+  }
+
+  .NavLink {
+    font-size: 16px;
+  }
+}
 /* --- Portfolio Page ------------- */
 .Portfolio {
   width: 100%;
@@ -94,13 +110,20 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.297);
+  border-radius: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+  transition: height 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 650px) {
+  .Window {
+    height: 50vh;
+  }
+}
 .PortfolioContent {
   width: 100%;
   position: absolute;
-  padding-left: 10%;
+  padding: 0 10%;
   z-index: 20;
 }
 
@@ -112,14 +135,25 @@ a {
 /* -- Title ----- */
 .PortfolioTitle {
   margin-top: 100px;
-  font-size: 90px;
+  font-size: 130px;
   display: inline-block;
 }
 
+@media screen and (max-width: 1260px) {
+  .PortfolioTitle {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .PortfolioTitle {
+    font-size: 50px;
+  }
+}
 /* -- Context ----- */
 .PortfolioContext {
   width: 75vw;
-  margin-top: 50px;
+  max-width: 1400px;
+  margin-top: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -136,9 +170,26 @@ a {
   line-height: 24px;
 }
 
+@media screen and (max-width: 500px) {
+  .PortfolioContext {
+    flex-direction: column;
+  }
+
+  .PortfolioContext-Title {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .PortfolioContext-Text {
+    width: 100%;
+    font-size: 14px;
+  }
+}
 /* -- Project Links ----- */
 .PortfolioProjects {
-  margin-top: 150px;
+  margin-top: 300px;
+  transition: margin-top 0.5s ease-in-out;
 }
 
 .Project {
@@ -150,6 +201,8 @@ a {
   position: absolute;
   font-size: 13px;
   font-weight: 400;
+  margin-top: 15px;
+  transition: margin-top 0.5s ease-in-out;
 }
 
 .ProjectLink {
@@ -158,6 +211,7 @@ a {
   font-weight: 900;
   font-style: normal;
   text-transform: uppercase;
+  outline: none;
 }
 
 .ProjectLink:hover {
@@ -171,18 +225,80 @@ a {
   margin-left: 5px;
 }
 
+@media screen and (max-width: 1732px) {
+  .PortfolioProjects {
+    margin-top: 200px;
+  }
+}
+@media screen and (max-width: 1261px) {
+  .PortfolioProjects {
+    margin-top: 300px;
+  }
+}
 @media screen and (max-width: 840px) {
   .ProjectLink {
     font-size: 17vw;
   }
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 696px) {
+  .PortfolioProjects {
+    margin-top: 140px;
+  }
+}
+@media screen and (max-width: 650px) {
   .ProjectNumber {
     font-size: 2vw;
+    margin-top: 0;
   }
 
   .ProjectDescription {
     font-size: 2vw;
+  }
+}
+@media screen and (max-height: 800px) {
+  .PortfolioProjects {
+    margin-top: 130px;
+  }
+}
+/* -- Connect ----- */
+.PortfolioConnect {
+  margin-top: 140px;
+  margin-bottom: 280px;
+}
+
+.PortfolioConnect-TextBox {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.PortfolioConnect-Email {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.PortfolioConnect-SocialWrap {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SocialTag {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 780px) {
+  .PortfolioConnect-TextBox {
+    flex-direction: column;
+  }
+
+  .PortfolioConnect-Email {
+    margin-bottom: 15px;
+  }
+
+  .PortfolioConnect-SocialWrap {
+    width: 230px;
   }
 }
 /* -- End Marker ----- */

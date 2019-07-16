@@ -7,9 +7,9 @@ class SlideUp extends Highway.Transition{
 
         const PageIn = new TimelineMax();
             PageIn 
-                .fromTo(to, .6,
-                     {opacity: 0, left: '-100%'}, 
-                     {opacity:1, left: '0%', ease: Expo.easeInOut, onComplete: function(){
+                .fromTo(to, 1,
+                     {opacity: 0, bottom: '-100%'}, 
+                     {opacity:1, bottom: '0%', ease: Expo.easeInOut, onComplete: function(){
                         done();
                     }}
                 );
