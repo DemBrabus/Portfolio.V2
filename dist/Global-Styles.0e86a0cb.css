@@ -18,7 +18,6 @@ body {
 .BodyWrap {
   width: 100%;
   height: 100%;
-  max-width: 1920px;
   position: relative;
 }
 
@@ -90,28 +89,120 @@ a {
 }
 
 .Window {
-  width: 65%;
-  height: 400px;
-  background-color: #141414;
-  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.297);
+  width: 65vw;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.297);
 }
 
 .PortfolioContent {
   width: 100%;
-  height: 100%;
   position: absolute;
+  padding-left: 10%;
   z-index: 20;
 }
 
-.PortfolioTitle {
-  margin-top: 80px;
-  font-size: 80px;
-  text-align: center;
+.PortfolioInner {
+  width: 100%;
+  height: 100%;
 }
 
+/* -- Title ----- */
+.PortfolioTitle {
+  margin-top: 100px;
+  font-size: 90px;
+  display: inline-block;
+}
+
+/* -- Context ----- */
+.PortfolioContext {
+  width: 75vw;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.PortfolioContext-Title {
+  white-space: nowrap;
+  width: 500px;
+  font-size: 17px;
+}
+
+.PortfolioContext-Text {
+  width: 800px;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/* -- Project Links ----- */
 .PortfolioProjects {
+  margin-top: 150px;
+}
+
+.Project {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.ProjectNumber {
+  position: absolute;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.ProjectLink {
+  font-size: 150px;
+  font-family: aktiv-grotesk-condensed, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.ProjectLink:hover {
+  color: #debdc7;
+}
+
+.ProjectDescription {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: -10px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 840px) {
+  .ProjectLink {
+    font-size: 17vw;
+  }
+}
+@media screen and (max-width: 670px) {
+  .ProjectNumber {
+    font-size: 2vw;
+  }
+
+  .ProjectDescription {
+    font-size: 2vw;
+  }
+}
+/* -- End Marker ----- */
+.PortfolioEndMarker {
   width: 100%;
-  margin-left: 50px;
+  height: 22px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #add1d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EndMarkerHook {
+  color: #141414;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* --- About Page ------------- */
