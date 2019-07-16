@@ -1,5 +1,6 @@
 import Highway from '@dogstudio/highway';
 import SlideUp from './PageTransition';
+import Run from './MainScripts';
 
 
 const H = new Highway.Core({
@@ -11,6 +12,8 @@ const H = new Highway.Core({
     // portfolio: SlideUp,
     // about: SlideUp,
 });
+
+Run();
 
 
 

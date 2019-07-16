@@ -63,14 +63,14 @@ a {
 /* --- Navigation ------------ */
 
         .Nav {
-            width: 100%;
+            width: 300px;
             height: 100px;
             position: fixed;
             top: 0;
-            left: 0;
-            padding: 0px 80px;
+            right: 0;
+            padding-right: 80px;
             display: flex;
-            justify-content: space-between;
+            justify-content: end;
             align-items: center;
             z-index: 10000;
             transition: padding .5s ease-in-out;
@@ -140,15 +140,62 @@ a {
             .Window {
                 width: 65vw;
                 height: 70vh;
-                // background: url('../Assets/Images/StarckThumbNail.png');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 2px;
-                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
-                // background-color: beige;
+                opacity: 0;
                 transition: height .5s ease-in-out;
+                transition: opacity .7s ease-in-out;
+                
             }
+
+                .Project1Window {
+                    background: url('../Assets/Images/StarckThumbNail.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 2px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+                    opacity: .8;
+                }
+
+                .Project2Window {
+                    background: url('../Assets/Images/CardanoThumbNail.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 2px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+                    opacity: .95;
+                }
+
+                .Project3Window {
+                    background: url('../Assets/Images/EMCThumbNail.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 2px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+                    opacity: .8;
+                }
+
+                .Project4Window {
+                    background: url('../Assets/Images/SaporiThumbNail.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 2px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+                    opacity: .95;
+                }
+
+                .Project5Window {
+                    // background: url('../Assets/Images/StarckThumbNail.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 2px;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+                    opacity: .95;
+                }
+                
 
             @media screen and (max-width: 650px){
                 .Window {

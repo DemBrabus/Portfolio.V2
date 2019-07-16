@@ -16017,12 +16017,85 @@ function (_Highway$Transition) {
 
 var _default = SlideUp;
 exports.default = _default;
-},{"@dogstudio/highway":"node_modules/@dogstudio/highway/build/highway.js","gsap":"node_modules/gsap/index.js"}],"Scripts/index.js":[function(require,module,exports) {
+},{"@dogstudio/highway":"node_modules/@dogstudio/highway/build/highway.js","gsap":"node_modules/gsap/index.js"}],"Scripts/MainScripts.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var Run = function Run() {
+  console.log('Portfolio.V2');
+  var ProjectLink1 = document.getElementById('ProjectLink1');
+  var ProjectLink2 = document.getElementById('ProjectLink2');
+  var ProjectLink3 = document.getElementById('ProjectLink3');
+  var ProjectLink4 = document.getElementById('ProjectLink4');
+  var ProjectLink5 = document.getElementById('ProjectLink5');
+  var Window = document.getElementById('Window');
+
+  var Project1Hover = function Project1Hover() {
+    Window.classList.add('Project1Window');
+  };
+
+  var Project1Disable = function Project1Disable() {
+    Window.classList.remove('Project1Window');
+  };
+
+  var Project2Hover = function Project2Hover() {
+    Window.classList.add('Project2Window');
+  };
+
+  var Project2Disable = function Project2Disable() {
+    Window.classList.remove('Project2Window');
+  };
+
+  var Project3Hover = function Project3Hover() {
+    Window.classList.add('Project3Window');
+  };
+
+  var Project3Disable = function Project3Disable() {
+    Window.classList.remove('Project3Window');
+  };
+
+  var Project4Hover = function Project4Hover() {
+    Window.classList.add('Project4Window');
+  };
+
+  var Project4Disable = function Project4Disable() {
+    Window.classList.remove('Project4Window');
+  };
+
+  var Project5Hover = function Project5Hover() {
+    Window.classList.add('Project5Window');
+  };
+
+  var Project5Disable = function Project5Disable() {
+    Window.classList.remove('Project5Window');
+  };
+
+  ProjectLink1.addEventListener('mouseover', Project1Hover);
+  ProjectLink1.addEventListener('mouseleave', Project1Disable);
+  ProjectLink2.addEventListener('mouseover', Project2Hover);
+  ProjectLink2.addEventListener('mouseleave', Project2Disable);
+  ProjectLink3.addEventListener('mouseover', Project3Hover);
+  ProjectLink3.addEventListener('mouseleave', Project3Disable);
+  ProjectLink4.addEventListener('mouseover', Project4Hover);
+  ProjectLink4.addEventListener('mouseleave', Project4Disable);
+  ProjectLink5.addEventListener('mouseover', Project5Hover);
+  ProjectLink5.addEventListener('mouseleave', Project5Disable);
+};
+
+var _default = Run;
+exports.default = _default;
+},{}],"Scripts/index.js":[function(require,module,exports) {
 "use strict";
 
 var _highway = _interopRequireDefault(require("@dogstudio/highway"));
 
 var _PageTransition = _interopRequireDefault(require("./PageTransition"));
+
+var _MainScripts = _interopRequireDefault(require("./MainScripts"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16032,8 +16105,9 @@ var H = new _highway.default.Core({
     // about: SlideUp,
 
   }
-}); //We can assign specific transitions(classes) to particular pages: or set a default:
-},{"@dogstudio/highway":"node_modules/@dogstudio/highway/build/highway.js","./PageTransition":"Scripts/PageTransition.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+});
+(0, _MainScripts.default)(); //We can assign specific transitions(classes) to particular pages: or set a default:
+},{"@dogstudio/highway":"node_modules/@dogstudio/highway/build/highway.js","./PageTransition":"Scripts/PageTransition.js","./MainScripts":"Scripts/MainScripts.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -16061,7 +16135,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61866" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65062" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

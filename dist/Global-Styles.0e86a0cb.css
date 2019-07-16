@@ -45,14 +45,14 @@ a {
 /* --- Global ------------ */
 /* --- Navigation ------------ */
 .Nav {
-  width: 100%;
+  width: 300px;
   height: 100px;
   position: fixed;
   top: 0;
-  left: 0;
-  padding: 0px 80px;
+  right: 0;
+  padding-right: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   z-index: 10000;
   transition: padding 0.5s ease-in-out;
@@ -107,12 +107,58 @@ a {
 .Window {
   width: 65vw;
   height: 70vh;
+  opacity: 0;
+  transition: height 0.5s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.Project1Window {
+  background: url("/StarckThumbNail.0a4e757c.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 2px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
-  transition: height 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
+.Project2Window {
+  background: url("/CardanoThumbNail.95eb9ea2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+  opacity: 0.95;
+}
+
+.Project3Window {
+  background: url("/EMCThumbNail.fe8da606.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+  opacity: 0.8;
+}
+
+.Project4Window {
+  background: url("/SaporiThumbNail.d756f3e3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+  opacity: 0.95;
+}
+
+.Project5Window {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
+  opacity: 0.95;
 }
 
 @media screen and (max-width: 650px) {

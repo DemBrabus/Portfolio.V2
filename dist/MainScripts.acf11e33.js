@@ -117,79 +117,78 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"Scripts/MainScripts.js":[function(require,module,exports) {
+"use strict";
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
 
-  return bundleURL;
-}
+var Run = function Run() {
+  console.log('Portfolio.V2');
+  var ProjectLink1 = document.getElementById('ProjectLink1');
+  var ProjectLink2 = document.getElementById('ProjectLink2');
+  var ProjectLink3 = document.getElementById('ProjectLink3');
+  var ProjectLink4 = document.getElementById('ProjectLink4');
+  var ProjectLink5 = document.getElementById('ProjectLink5');
+  var Window = document.getElementById('Window');
 
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
+  var Project1Hover = function Project1Hover() {
+    Window.classList.add('Project1Window');
   };
 
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
+  var Project1Disable = function Project1Disable() {
+    Window.classList.remove('Project1Window');
+  };
 
-var cssTimeout = null;
+  var Project2Hover = function Project2Hover() {
+    Window.classList.add('Project2Window');
+  };
 
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
+  var Project2Disable = function Project2Disable() {
+    Window.classList.remove('Project2Window');
+  };
 
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
+  var Project3Hover = function Project3Hover() {
+    Window.classList.add('Project3Window');
+  };
 
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
+  var Project3Disable = function Project3Disable() {
+    Window.classList.remove('Project3Window');
+  };
 
-    cssTimeout = null;
-  }, 50);
-}
+  var Project4Hover = function Project4Hover() {
+    Window.classList.add('Project4Window');
+  };
 
-module.exports = reloadCSS;
-},{"./bundle-url":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"Styles/Global-Styles.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
+  var Project4Disable = function Project4Disable() {
+    Window.classList.remove('Project4Window');
+  };
 
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./../Assets/Images/StarckThumbNail.png":[["StarckThumbNail.0a4e757c.png","Assets/Images/StarckThumbNail.png"],"Assets/Images/StarckThumbNail.png"],"./../Assets/Images/CardanoThumbNail.png":[["CardanoThumbNail.95eb9ea2.png","Assets/Images/CardanoThumbNail.png"],"Assets/Images/CardanoThumbNail.png"],"./../Assets/Images/EMCThumbNail.png":[["EMCThumbNail.fe8da606.png","Assets/Images/EMCThumbNail.png"],"Assets/Images/EMCThumbNail.png"],"./../Assets/Images/SaporiThumbNail.png":[["SaporiThumbNail.d756f3e3.png","Assets/Images/SaporiThumbNail.png"],"Assets/Images/SaporiThumbNail.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+  var Project5Hover = function Project5Hover() {
+    Window.classList.add('Project5Window');
+  };
+
+  var Project5Disable = function Project5Disable() {
+    Window.classList.remove('Project5Window');
+  };
+
+  ProjectLink1.addEventListener('mouseover', Project1Hover);
+  ProjectLink1.addEventListener('mouseleave', Project1Disable);
+  ProjectLink2.addEventListener('mouseover', Project2Hover);
+  ProjectLink2.addEventListener('mouseleave', Project2Disable);
+  ProjectLink3.addEventListener('mouseover', Project3Hover);
+  ProjectLink3.addEventListener('mouseleave', Project3Disable);
+  ProjectLink4.addEventListener('mouseover', Project4Hover);
+  ProjectLink4.addEventListener('mouseleave', Project4Disable);
+  ProjectLink5.addEventListener('mouseover', Project5Hover);
+  ProjectLink5.addEventListener('mouseleave', Project5Disable);
+};
+
+var _default = Run;
+exports.default = _default;
+},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -392,5 +391,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/Global-Styles.0e86a0cb.js.map
+},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","Scripts/MainScripts.js"], null)
+//# sourceMappingURL=/MainScripts.acf11e33.js.map
