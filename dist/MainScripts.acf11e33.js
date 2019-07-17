@@ -136,6 +136,7 @@ var Run = function Run() {
 
   var Project1Hover = function Project1Hover() {
     Window.classList.add('Project1Window');
+    console.log('IN 1');
   };
 
   var Project1Disable = function Project1Disable() {
@@ -216,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65062" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62426" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -12,6 +12,7 @@ const Run = () => {
 
     const Project1Hover = () => {
         Window.classList.add('Project1Window');
+        console.log('IN 1');
     }
     const Project1Disable = () => {
         Window.classList.remove('Project1Window');
