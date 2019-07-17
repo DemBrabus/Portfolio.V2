@@ -3,15 +3,15 @@ import SlideUp from './PageTransition';
 import Run from './MainScripts';
 
 
-const H = new Highway.Core({
+// const H = new Highway.Core({
 
-    transitions: {
-        default: SlideUp
-    }
+//     transitions: {
+//         default: SlideUp
+//     }
     
-    // portfolio: SlideUp,
-    // about: SlideUp,
-});
+//     // portfolio: SlideUp,
+//     // about: SlideUp,
+// });
 
 
 

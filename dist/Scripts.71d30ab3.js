@@ -16100,13 +16100,13 @@ var _MainScripts = _interopRequireDefault(require("./MainScripts"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var H = new _highway.default.Core({
-  transitions: {
-    default: _PageTransition.default // portfolio: SlideUp,
-    // about: SlideUp,
-
-  }
-});
+// const H = new Highway.Core({
+//     transitions: {
+//         default: SlideUp
+//     }
+//     // portfolio: SlideUp,
+//     // about: SlideUp,
+// });
 (0, _MainScripts.default)(); //We can assign specific transitions(classes) to particular pages: or set a default:
 },{"@dogstudio/highway":"node_modules/@dogstudio/highway/build/highway.js","./PageTransition":"Scripts/PageTransition.js","./MainScripts":"Scripts/MainScripts.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -16136,7 +16136,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62426" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51169" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
