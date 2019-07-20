@@ -8,7 +8,8 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    color: #E6E6E6;
+    color: rgb(239, 239, 239);
+    // background-color: #000;
     background-color: #141414;
     overflow-x: hidden;
     display: flex;
@@ -77,7 +78,24 @@ a {
             
         }
 
+        .ProjectNav {
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 0 80px;
+            display: flex;
+            justify-content: space-between;;
+            align-items: center;
+            z-index: 10000;
+            transition: all .5s ease-in-out;
+        }
+
             .Logo {
+                font-size: 16px;
+                font-weight: 900;
+                text-transform: uppercase;
             }
 
             .NavList {
@@ -110,11 +128,18 @@ a {
                         font-weight: 700;
                     }
 
+        
+
         @media screen and (max-width: 650px){
             .Nav {
                 width: 180px;
                 padding-right: 35px;
                 
+            }
+
+            .ProjectNav {
+                width: 100%;
+                padding: 0 35px;
             }
             .NavList {
             }
@@ -155,11 +180,23 @@ a {
             .Window {
                 width: 65vw;
                 height: 70vh;
-                opacity: 0;
+                position: relative;
                 transition: height .5s ease-in-out;
                 transition: opacity .7s ease-in-out;
                 
             }
+
+            .Cloud {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                z-index: 1;
+                transition: opacity .7s ease-in-out;
+            }
+
+
+
 
 
                 .Project1Window {
@@ -170,6 +207,7 @@ a {
                     border-radius: 2px;
                     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
                     opacity: .85;
+                    z-index: 5;
                 }
 
                 .Project2Window {
@@ -180,6 +218,7 @@ a {
                     border-radius: 2px;
                     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
                     opacity: .95;
+                    z-index: 5;
                 }
 
                 .Project3Window {
@@ -190,6 +229,7 @@ a {
                     border-radius: 2px;
                     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
                     opacity: .85;
+                    z-index: 5;
                 }
 
                 .Project4Window {
@@ -200,16 +240,7 @@ a {
                     border-radius: 2px;
                     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
                     opacity: .95;
-                }
-
-                .Project5Window {
-                    // background: url('../Assets/Images/StarckThumbNail.png');
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    border-radius: 2px;
-                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.311);
-                    opacity: .95;
+                    z-index: 5;
                 }
                 
 
@@ -322,6 +353,12 @@ a {
                         margin-top: 300px;
                         transition: margin-top .5s ease-in-out;
                     }
+                    .PortfolioProjectsTitle {
+                        font-size: 10px;
+                        font-weight: 200;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                    }
 
                     .ProjectList {
 
@@ -348,10 +385,14 @@ a {
                         font-style: normal;
                         text-transform: uppercase;
                         outline: none;
+                        opacity: 1;
+                        transition: transform opacity 2s ease-in-out;
 
                     }
                             .ProjectLink:hover {
-                                color: rgb(222, 189, 199);
+                                // color: rgb(133, 133, 133);
+                                // color: rgb(222, 189, 199);
+                                opacity: .6;
                             }
                             
 
@@ -367,13 +408,13 @@ a {
 
                 @media screen and (max-width: 1732px){
                     .PortfolioProjects {
-                        margin-top: 200px;
+                        margin-top: 170px;
                     }
                 }
 
                 @media screen and (max-width: 1261px){
                     .PortfolioProjects {
-                        margin-top: 300px;
+                        margin-top: 200px;
                     }
                 }
 
@@ -383,19 +424,32 @@ a {
                     }
                 }
 
+                 @media screen and (max-width: 800px){
+                    .PortfolioProjects {
+                        margin-top: 100px;
+                    }
+                }
+
                 @media screen and (max-width: 696px){
                     .PortfolioProjects {
                         margin-top: 140px;
                     }
                 }
+                
 
                 @media screen and (max-width: 650px){
                     .ProjectNumber {
                         font-size: 2vw;
-                        margin-top: 0;
+                        margin-top: 5px;
                     }
                     .ProjectDescription {
                         font-size: 2vw;
+                    }
+                }
+
+                @media screen and (max-width: 550px){
+                    .PortfolioProjects {
+                        margin-top: 80px;
                     }
                 }
 
@@ -592,7 +646,7 @@ a {
             font-family: aktiv-grotesk-condensed, sans-serif;
             text-transform: uppercase;
             margin-bottom: 20px;
-            transition: all .5s ease-in-out;
+            transition: font-size .5s ease-in-out;
         }
 
         .AboutSectionSubtitle {
@@ -607,6 +661,7 @@ a {
         .AboutSectionText {
             font-size: 16px;
             line-height: 30px;
+            text-transform: capitalize;
         }
 
             .AboutSectionTextDark {
@@ -642,4 +697,290 @@ a {
         font-size: 12px;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- Project Page -G -------------------------------- */
+
+.ProjectPage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .ProjectPageWrap {
+        width: 100%;
+        max-width: 1900px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    #Project1 {
+        // background-color: #333;
+    }
+    #Project2 {
+        // background-color: #444;
+    }
+    #Project3 {
+        // background-color: #555;
+    }
+    #Project4 {
+        // background-color: #666;
+    }
+
+
+    .ProjectPageTitle {
+        margin-top: 150px;
+        margin-bottom: 60px;
+        font-size: 130px;
+        display: inline-block;
+    }
+
+    .ProjectPageText {
+        font-size: 16px;
+        width: 100%;
+        line-height: 32px;
+    }
+
+    .ProjectPageImage {
+        border-radius: 2px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all .5s;
+    }
+
+    .ProjectPageIntroText {
+        max-width: 570px;
+        margin-bottom: 40px;
+    }
+
+    .ProjectPageLinksWrap {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ProjectPageLink {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-bottom: 80px;
+    }
+
+    .ProjectPageImage-Hero {
+        width: 100%;
+        height: 30vw;
+        background: url('../Assets/Images/Project1/Project1Hero-Portfolio.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 200px;
+    }
+    
+    .ProjectPageSection1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+
+        .ProjectPageSection1-TextWrap {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-right: 40px;
+            
+        }
+
+        .ProjectPageSection1-Title {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+
+        .ProjectPageSection1-Text {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .ProjectPageSection1ImageWrap {
+            width: 50%;
+            height: 25vw;
+            background: url('../Assets/Images/Project1/Project1Section1Image.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    .ProjectPageSection2 {
+        width: 100%;
+        height: 40vw;
+        margin-bottom: 140px;
+        position: relative;
+    }
+
+        .ProjectPageSection2-DesktopWindow {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .DesktopWindow-Back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #F0F0F0;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .DesktopWindow-BackImage {
+            width: 80%;
+            height: 85%;
+            position: absolute;
+            top: 0;
+
+            margin-top: 7.5%;
+            background: url('../Assets/Images/Project1/Project1DesktopWindow.png');
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 2px 2px 10px  rgba(0, 0, 0, .15); 
+        }
+
+        .DesktopWindow-Top {
+            position: absolute; 
+            width: 100%;
+            height: 15%;
+            background-color: #212121;
+        }
+
+        .DesktopWindow-TopBrowser {
+            width: 100%;
+            height: 50%;
+            background-color: #2B2B2B;
+            position: relative;;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            box-shadow: 2px 2px 10px  rgba(0, 0, 0, .05);
+        }
+
+            .DesktopWindowBrowser-Menu {
+                width: 50px;
+                height: 100%;
+                margin-left: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: all .5s;
+            }
+
+                .DesktopWindowBrowser-MenuIcon {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    transition: all .5s;
+                }
+
+                    #MenuIcon1 {
+                        background-color: rgb(205, 85, 85);
+                    }
+
+                    #MenuIcon2 {
+                        background-color: rgb(218, 204, 53);
+                    }
+
+                    #MenuIcon3 {
+                        background-color: rgb(114, 225, 81);
+                    }
+
+        .DesktopWindow-Bottom {
+            width: 100%;
+            height: 7.5%;
+            position: absolute;;
+            bottom: 0;
+            left: 0;
+            background-color: #212121;
+        }
+
+
+
+@media screen and (max-width: 1200px){
+    .DesktopWindowBrowser-Menu {
+        width: 35px;
+    }
+    .DesktopWindowBrowser-MenuIcon {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .ProjectPageImage-Hero {
+        height: 50vw;
+        margin-bottom: 140px;
+    }
+    .ProjectPageSection1 {
+        flex-direction: column;
+        
+    }
+    .ProjectPageSection1-TextWrap {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    .ProjectPageSection1-Text {
+        width: 100%;
+        max-width: 100%;
+    }
+    .ProjectPageSection1ImageWrap {
+        width: 100%;
+        height: 40vw;
+        max-height: 800px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    
+    .ProjectPageTitle {
+        font-size: 50px;
+    }
+    
+    .ProjectPageIntroText {
+        max-width: 100%;
+    }
+    .DesktopWindowBrowser-Menu {
+        width: 20px;
+        margin-left: 10px;
+    }
+    .DesktopWindowBrowser-MenuIcon {
+        width: 4px;
+        height: 4px;
+    }
 }

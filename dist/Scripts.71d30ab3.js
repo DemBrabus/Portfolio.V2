@@ -16031,47 +16031,41 @@ var Run = function Run() {
   var ProjectLink2 = document.getElementById('ProjectLink2');
   var ProjectLink3 = document.getElementById('ProjectLink3');
   var ProjectLink4 = document.getElementById('ProjectLink4');
-  var ProjectLink5 = document.getElementById('ProjectLink5');
-  var Window = document.getElementById('Window');
+  var Cloud1 = document.getElementById('Cloud1');
+  var Cloud2 = document.getElementById('Cloud2');
+  var Cloud3 = document.getElementById('Cloud3');
+  var Cloud4 = document.getElementById('Cloud4');
 
   var Project1Hover = function Project1Hover() {
-    Window.classList.add('Project1Window');
+    Cloud1.classList.add('Project1Window');
   };
 
   var Project1Disable = function Project1Disable() {
-    Window.classList.remove('Project1Window');
+    Cloud1.classList.remove('Project1Window');
   };
 
   var Project2Hover = function Project2Hover() {
-    Window.classList.add('Project2Window');
+    Cloud2.classList.add('Project2Window');
   };
 
   var Project2Disable = function Project2Disable() {
-    Window.classList.remove('Project2Window');
+    Cloud2.classList.remove('Project2Window');
   };
 
   var Project3Hover = function Project3Hover() {
-    Window.classList.add('Project3Window');
+    Cloud3.classList.add('Project3Window');
   };
 
   var Project3Disable = function Project3Disable() {
-    Window.classList.remove('Project3Window');
+    Cloud3.classList.remove('Project3Window');
   };
 
   var Project4Hover = function Project4Hover() {
-    Window.classList.add('Project4Window');
+    Cloud4.classList.add('Project4Window');
   };
 
   var Project4Disable = function Project4Disable() {
-    Window.classList.remove('Project4Window');
-  };
-
-  var Project5Hover = function Project5Hover() {
-    Window.classList.add('Project5Window');
-  };
-
-  var Project5Disable = function Project5Disable() {
-    Window.classList.remove('Project5Window');
+    Cloud4.classList.remove('Project4Window');
   };
 
   ProjectLink1.addEventListener('mouseover', Project1Hover);
@@ -16082,8 +16076,6 @@ var Run = function Run() {
   ProjectLink3.addEventListener('mouseleave', Project3Disable);
   ProjectLink4.addEventListener('mouseover', Project4Hover);
   ProjectLink4.addEventListener('mouseleave', Project4Disable);
-  ProjectLink5.addEventListener('mouseover', Project5Hover);
-  ProjectLink5.addEventListener('mouseleave', Project5Disable);
 };
 
 var _default = Run;
@@ -16135,7 +16127,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61001" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64364" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

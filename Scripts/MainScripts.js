@@ -7,44 +7,38 @@ const Run = () => {
     const ProjectLink2 = document.getElementById('ProjectLink2');
     const ProjectLink3 = document.getElementById('ProjectLink3');
     const ProjectLink4 = document.getElementById('ProjectLink4');
-    const ProjectLink5 = document.getElementById('ProjectLink5');
-    const Window = document.getElementById('Window');
+    const Cloud1 = document.getElementById('Cloud1');
+    const Cloud2 = document.getElementById('Cloud2');
+    const Cloud3 = document.getElementById('Cloud3');
+    const Cloud4 = document.getElementById('Cloud4');
 
     const Project1Hover = () => {
-        Window.classList.add('Project1Window');
+        Cloud1.classList.add('Project1Window');
     }
     const Project1Disable = () => {
-        Window.classList.remove('Project1Window');
+        Cloud1.classList.remove('Project1Window');
     }
 
         const Project2Hover = () => {
-        Window.classList.add('Project2Window');
+        Cloud2.classList.add('Project2Window');
         }
         const Project2Disable = () => {
-            Window.classList.remove('Project2Window');
+            Cloud2.classList.remove('Project2Window');
         }
 
     const Project3Hover = () => {
-        Window.classList.add('Project3Window');
+        Cloud3.classList.add('Project3Window');
     }
     const Project3Disable = () => {
-        Window.classList.remove('Project3Window');
+        Cloud3.classList.remove('Project3Window');
     }
 
         const Project4Hover = () => {
-        Window.classList.add('Project4Window');
+        Cloud4.classList.add('Project4Window');
         }
         const Project4Disable = () => {
-            Window.classList.remove('Project4Window');
+            Cloud4.classList.remove('Project4Window');
         }
-
-    const Project5Hover = () => {
-        
-        Window.classList.add('Project5Window');
-    }
-    const Project5Disable = () => {
-        Window.classList.remove('Project5Window');
-    }
 
 
 
@@ -63,10 +57,6 @@ const Run = () => {
 
         ProjectLink4.addEventListener('mouseover', Project4Hover);
         ProjectLink4.addEventListener('mouseleave', Project4Disable);
-
-    ProjectLink5.addEventListener('mouseover', Project5Hover);
-    ProjectLink5.addEventListener('mouseleave', Project5Disable);
-
 }
 
 
