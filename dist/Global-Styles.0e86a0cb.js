@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../Assets/Images/StarckThumbNail.png":[["StarckThumbNail.0a4e757c.png","Assets/Images/StarckThumbNail.png"],"Assets/Images/StarckThumbNail.png"],"./../Assets/Images/SpecializedThumbNail.png":[["SpecializedThumbNail.23b84a62.png","Assets/Images/SpecializedThumbNail.png"],"Assets/Images/SpecializedThumbNail.png"],"./../Assets/Images/EMCThumbNail.png":[["EMCThumbNail.fe8da606.png","Assets/Images/EMCThumbNail.png"],"Assets/Images/EMCThumbNail.png"],"./../Assets/Images/SaporiThumbNail.png":[["SaporiThumbNail.d756f3e3.png","Assets/Images/SaporiThumbNail.png"],"Assets/Images/SaporiThumbNail.png"],"./../Assets/Icons/HeartIcon.svg":[["HeartIcon.87100c11.svg","Assets/Icons/HeartIcon.svg"],"Assets/Icons/HeartIcon.svg"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../Assets/Icons/HeartIcon.svg":[["HeartIcon.87100c11.svg","Assets/Icons/HeartIcon.svg"],"Assets/Icons/HeartIcon.svg"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57223" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62542" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

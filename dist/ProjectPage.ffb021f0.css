@@ -59,15 +59,29 @@
   color: #c0dde1;
 }
 
+.TextBolder {
+  font-weight: 900;
+}
+
 /* ---- Project Hero --------------- */
 .ProjectPageImage-Hero {
   width: 100%;
   height: 30vw;
+  margin-bottom: 140px;
+}
+
+.ProjectPageImage1 {
   background: url("/Project1Hero-Portfolio.b3b9417a.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 140px;
+}
+
+.ProjectPageImage2 {
+  background: url("/Project2-HeroImage.81f0d8d4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* ---- Project Section 1 --------------- */
@@ -115,7 +129,7 @@
 .ProjectPageSection2 {
   width: 100%;
   height: 40vw;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
   position: relative;
 }
 
@@ -208,6 +222,7 @@
 .ProjectPageSection3 {
   width: 100%;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .ProjectPageSection3-Text {
@@ -259,6 +274,7 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  opacity: 0.95;
 }
 
 .ProjectPageSection4-Display1 {
@@ -290,21 +306,29 @@
   position: relative;
   background: url("/Project1DisplayImage1Big.f4b0d6bd.png");
   background-position: top;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .ProjectPageSection4-Display3 {
   width: 10%;
   height: 35%;
   position: relative;
-  background-color: #c0dde1;
+  background: url("/Project1MobileDisplay3Small.25e4952a.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .ProjectPageSection4-Display4 {
   width: 4%;
   height: 22%;
   position: relative;
-  background-color: #c0dde1;
+  background: url("/Project1-MobileDisplayBig.bbe45bd3.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .ProjectPageSection4Right {
@@ -318,13 +342,59 @@
 .ProjectPageSection4MobileDisplay {
   width: 80%;
   height: 90%;
-  background-color: #c0dde1;
+  background: url("/Project1-MobileDisplayBig.bbe45bd3.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+}
+
+/* ---- Project Section 5 --------------- */
+.ProjectPageSection5 {
+  width: 100%;
+  height: 40vw;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.DesktopWindow-BackImage2 {
+  background: url("/Project1-DesktopDisplay2Image.252aadec.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+}
+
+/* ---- Project Closing --------------- */
+.ProjectPage-Closing {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.ProjectPage-ClosingText {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.ProjectPage-ClosingProjectTitle {
+  font-size: 90px;
+  font-weight: 900;
+}
+
+.ProjectPage-ClosingLink:hover {
+  color: #c0dde1;
 }
 
 .SwitchSection2-Section3Mobile {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.ProjectPageSection-TitleMobileView {
+  display: none;
+  align-self: flex-start;
 }
 
 @media screen and (max-width: 1200px) {
@@ -363,6 +433,11 @@
     width: 100%;
     height: 40vw;
     max-height: 800px;
+  }
+
+  .ProjectPage-ClosingProjectTitle {
+    font-size: 10vw;
+    margin: 1.3vw 0;
   }
 }
 @media screen and (max-width: 800px) {
@@ -409,12 +484,30 @@
     margin-bottom: 100px;
   }
 
+  .ProjectPageSection2 {
+    margin-bottom: 100px;
+  }
+
+  .ProjectPageSection3 {
+    margin-bottom: 0px;
+  }
+
+  .ProjectPageSection4 {
+    margin-bottom: 80px;
+  }
+
   .ProjectPageSection4Right {
     flex-direction: column;
+    margin-top: 0;
   }
 
   .ProjectPageSection-TitleMobileView {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    display: block;
+  }
+
+  .ProjectPage-Closing {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 600px) {
