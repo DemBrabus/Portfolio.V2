@@ -152,7 +152,7 @@
         .Specialized-Image1 {
             width: 100%;
             height: 100%;
-            background: url('../Assets/Images/Project2/E-Com-Image.png');
+            background: url('../Assets/Images/Project2/Specialized-SidebySide.jpg');
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -223,7 +223,7 @@
                 }
 
             .DesktopWindow-BackImage {
-                width: 90%;
+                width: 100%;
                 height: 85%;
                 position: absolute;
                 top: 0;
@@ -233,6 +233,13 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 box-shadow: 2px 2px 10px  rgba(0, 0, 0, .15); 
+            }
+
+            .Specialized-Desktop1 {
+                background: url('../Assets/Images/Project2/Specialized-DesktopLanding.png');
+                background-position: top;
+                background-size: contain;
+                background-repeat: no-repeat;
             }
 
                 .Project1-DesktopTop2 {
@@ -326,7 +333,7 @@
     .ProjectPageSection3 {
         width: 100%;
         position: relative;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
     }
     
         .ProjectPageSection3-Text {
@@ -433,6 +440,37 @@
                         position: relative;
                     }
 
+                    .ProjectPageSection4MobileDisplay {
+                    width: 80%;
+                    height: 90%;
+                    background: url('../Assets/Images/Project1/Project1-MobileDisplayBig.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    opacity: .95;
+                }
+
+                    .Specialized-Responsive1 {
+                        background: url('../Assets/Images/Project2/Specialized-Responsive1.jpg');
+                        background-position: top;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    .Specialized-Responsive3 {
+                        background: url('../Assets/Images/Project2/Specialized-Responsive3.jpg');
+                        background-position: top;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
+                    .Specialized-Responsive4 {
+                        background: url('../Assets/Images/Project2/Specialized-Responsive4Big.jpg');
+                        background-position: top;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+
                         .Project1-ResponsiveDisplay1 {
                             background: url('../Assets/Images/Project1/Project1DisplayImage1Big.png');
                             background-position: top;
@@ -502,15 +540,7 @@
                 justify-content: center;
                 align-items: center;
             }
-                .ProjectPageSection4MobileDisplay {
-                    width: 80%;
-                    height: 90%;
-                    background: url('../Assets/Images/Project1/Project1-MobileDisplayBig.png');
-                    background-position: center;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    opacity: .95;
-                }
+                
 
                 .Project1-MobileDisplay {
                     background: url('../Assets/Images/Project3/Project3-ResponsiveDisplay4.png');
@@ -573,12 +603,20 @@
             background-position: top;
             background-repeat: no-repeat;
             opacity: .95;
+            background-color: #2B2B2B;
         }
 
                 .DesktopWindow-BackImage-Project3Display2 {
                     background: url('../Assets/Images/Project3/Project3-DesktopView2.png');
                     background-size: contain;
                     background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                .Specialized-Desktop2 {
+                    background: url('../Assets/Images/Project2/Specialized-Desktop2.jpg');
+                    background-size: contain;
+                    background-position: top;
                     background-repeat: no-repeat;
                 }
 

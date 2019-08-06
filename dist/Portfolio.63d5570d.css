@@ -33,21 +33,8 @@
   transition: opacity 0.7s ease-in-out;
 }
 
-.XXWindow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  z-index: 5;
-  background: url("/Noise.977a605c.gif");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.8;
-}
-
 .Project1Window {
-  background: url("/StarckThumbNail.0a4e757c.png");
+  background: url("/StarckThumbNail.cd928c91.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,7 +45,7 @@
 }
 
 .Project2Window {
-  background: url("/SpecializedThumbNail.23b84a62.png");
+  background: url("/SpecializedThumbNail.57926026.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,7 +56,7 @@
 }
 
 .Project3Window {
-  background: url("/EMCThumbNail.fe8da606.png");
+  background: url("/EMCThumbNail.9e42a0e4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,7 +67,7 @@
 }
 
 .Project4Window {
-  background: url("/SaporiThumbNail.d756f3e3.png");
+  background: url("/SaporiThumbNail.d010451b.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

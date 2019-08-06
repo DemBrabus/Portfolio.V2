@@ -34,25 +34,12 @@
                 transition: opacity .7s ease-in-out;
             }
 
-            .XXWindow {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                opacity: 1;
-                z-index: 5;
-                background: url('../../Assets/Images/Noise.gif');
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                opacity: .8;
-            }
-
 
 
 
 
                 .Project1Window {
-                    background: url('../../Assets/Images/StarckThumbNail.png');
+                    background: url('../../Assets/Images/StarckThumbNail.jpg');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -63,7 +50,7 @@
                 }
 
                 .Project2Window {
-                    background: url('../../Assets/Images/SpecializedThumbNail.png');
+                    background: url('../../Assets/Images/SpecializedThumbNail.jpg');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -74,7 +61,7 @@
                 }
 
                 .Project3Window {
-                    background: url('../../Assets/Images/EMCThumbNail.png');
+                    background: url('../../Assets/Images/EMCThumbNail.jpg');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -85,7 +72,7 @@
                 }
 
                 .Project4Window {
-                    background: url('../../Assets/Images/SaporiThumbNail.png');
+                    background: url('../../Assets/Images/SaporiThumbNail.jpg');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;

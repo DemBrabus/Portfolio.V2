@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"Styles/Portfolio/Portfolio.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"Styles/Portfolio/Portfolio.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../Assets/Images/Noise.gif":[["Noise.977a605c.gif","Assets/Images/Noise.gif"],"Assets/Images/Noise.gif"],"./../../Assets/Images/StarckThumbNail.png":[["StarckThumbNail.0a4e757c.png","Assets/Images/StarckThumbNail.png"],"Assets/Images/StarckThumbNail.png"],"./../../Assets/Images/SpecializedThumbNail.png":[["SpecializedThumbNail.23b84a62.png","Assets/Images/SpecializedThumbNail.png"],"Assets/Images/SpecializedThumbNail.png"],"./../../Assets/Images/EMCThumbNail.png":[["EMCThumbNail.fe8da606.png","Assets/Images/EMCThumbNail.png"],"Assets/Images/EMCThumbNail.png"],"./../../Assets/Images/SaporiThumbNail.png":[["SaporiThumbNail.d756f3e3.png","Assets/Images/SaporiThumbNail.png"],"Assets/Images/SaporiThumbNail.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../../Assets/Images/StarckThumbNail.jpg":[["StarckThumbNail.cd928c91.jpg","Assets/Images/StarckThumbNail.jpg"],"Assets/Images/StarckThumbNail.jpg"],"./../../Assets/Images/SpecializedThumbNail.jpg":[["SpecializedThumbNail.57926026.jpg","Assets/Images/SpecializedThumbNail.jpg"],"Assets/Images/SpecializedThumbNail.jpg"],"./../../Assets/Images/EMCThumbNail.jpg":[["EMCThumbNail.9e42a0e4.jpg","Assets/Images/EMCThumbNail.jpg"],"Assets/Images/EMCThumbNail.jpg"],"./../../Assets/Images/SaporiThumbNail.jpg":[["SaporiThumbNail.d010451b.jpg","Assets/Images/SaporiThumbNail.jpg"],"Assets/Images/SaporiThumbNail.jpg"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60149" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49248" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -392,5 +392,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/Portfolio.63d5570d.js.map
